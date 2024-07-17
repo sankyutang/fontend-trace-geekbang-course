@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "target": "es5",
+    "module":"ES2015",
+    "lib": ["es2015", "es2016", "es2017", "es6","dom"],
+    "strict": false,
+    "alwaysStrict": false,
+    "sourceMap": true,
+    "declaration": true,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "noImplicitAny": false, // 是否默认禁用 any
+    "removeComments": false, // 是否移除注释
+    "declarationDir": "dist/types",
+    "outDir": "dist/lib",
+    "typeRoots": [
+      "node_modules/@types",
+      "./src/typings",
+    ],
+    "skipLibCheck": true
+  },
+  "include": [
+    "src"
+  ],
+  "exclude": ["node_modules"]
+}
